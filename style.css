@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 5rem;
+    transition: background 0.5s linear,
+        color 0.3s linear;
+}
+
+body.dark {
+    background-color: black;
+    color: #ffffff
+}
+
+.container {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+}
+
+label {
+    user-select: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15%;
+    background-color: rgb(10, 120, 148);
+}
+
+body.dark label {
+    background-color: indigo;
+}
+
+input {
+    visibility: hidden;
+}
